@@ -5,7 +5,7 @@
 #include <chrono>
 #include <string.h>
 #include<fstream>
-#include "bfsh.h"
+#include "bfspar_h.h"
 using namespace std;
 using nano_s = std::chrono::nanoseconds;
 int graph[V+1][V+1]={0};
