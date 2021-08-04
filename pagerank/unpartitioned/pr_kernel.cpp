@@ -1,5 +1,5 @@
 #include <iostream>
-#include"header.h"
+#include"pr_h.h"
 using namespace std;
 void spmvector(float   val[MAX], int row[MAX], int col[MAX],float   p_new[N],float   p[N]);
 extern "C++"{
