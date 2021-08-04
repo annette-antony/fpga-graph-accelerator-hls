@@ -1,10 +1,11 @@
 # fpga-graph-accelerator-hls
-This repository contains all the codes we used in our 8th Semester, Final Year Project, 2021. 
 
-We considered four graph algorithms, namely, Breadth-First-search, Depth-First-Search, Single Source Shortest Path and PageRank in this project. 
+This repository contains all the codes for our 8th Semester, final year project 2021. The aim of our project was to develop a custom FPGA accelerator for graph processing using High Level Synthesis.
 
-The graph dataset considered has 4720 nodes and 27444 edges. 
+We considered four graph algorithms, namely, Breadth-First-search, Depth-First-Search, Single Source Shortest Path, and PageRank. 
 
-The naming convention followed is N/V - number of nodes and E/MAX - number of edges.
+The graph datasets are uploaded in each folder as required.
+
+The naming convention followed in the codes is N/V - number of nodes and E/MAX - number of edges.
 
 For further details, please refer to the Project Report.
