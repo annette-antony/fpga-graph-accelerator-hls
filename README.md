@@ -6,3 +6,5 @@ We considered four graph algorithms, namely, Breadth-First-search, Depth-First-S
 The graph dataset considered has 4720 nodes and 27444 edges. 
 
 The naming convention followed is N/V - number of nodes and E/MAX - number of edges.
+
+For further details, please refer to the Project Report.
