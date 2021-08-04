@@ -13,9 +13,9 @@ int v[edge];
 int main()
 {
 	int m=0;
-	FILE *fp = fopen("nodes.txt","r");
+	FILE *fp = fopen("edgelist.txt","r");
 	char line[100];
-	if((fp = fopen("nodes.txt","r")) == NULL)
+	if((fp = fopen("edgelist.txt","r")) == NULL)
 	{
 		fprintf(stderr,"[Error] Cannot open the file");
 		exit(1);
