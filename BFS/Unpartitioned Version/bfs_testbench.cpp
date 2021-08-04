@@ -43,10 +43,6 @@ int main()
   		graph[node2][node1]=1;
   	}
   	fclose(fp);
-  	//fp = fopen("chesapeake.mtx","r");
-	//fscanf(fp,"%d%d", &node1, &node2);
-  	//row[0]= node2;
-  	//fclose(fp);
   	int m = 0, j;
   	    nzr[0] = 0;
   	    for(int i=1;i<V+1;i++)
