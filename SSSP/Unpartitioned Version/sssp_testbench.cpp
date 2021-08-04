@@ -27,10 +27,10 @@ int main()
 		}
   d[src] = 0;
 
-  FILE *fp = fopen("3elt.mtx","r");
+  FILE *fp = fopen("adjacency.txt","r");
   char line[100];
   int g;
-  	  if((fp = fopen("3elt.mtx","r")) == NULL)
+  	  if((fp = fopen("adjacency.txt","r")) == NULL)
   	  {
          fprintf(stderr,"[Error] Cannot open the file");
          exit(1);
