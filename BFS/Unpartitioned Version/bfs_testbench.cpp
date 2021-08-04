@@ -23,9 +23,9 @@ int main()
 	{
 		visited[i] = 0;
 		}
-  FILE *fp = fopen("adjacency.txt","r");
+  FILE *fp = fopen("nodes.txt","r");
   char line[100];
-  	  if((fp = fopen("adjacency.txt","r")) == NULL)
+  	  if((fp = fopen("nodes.txt","r")) == NULL)
   	  {
          fprintf(stderr,"[Error] Cannot open the file");
          exit(1);
