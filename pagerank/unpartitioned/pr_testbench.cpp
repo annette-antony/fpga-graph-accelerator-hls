@@ -1,6 +1,6 @@
 #include <iostream>
 #include <stdlib.h>
-#include"header.h"
+#include"pr_h.h"
 #include <chrono>
 using namespace std;
 using nano_s = std::chrono::nanoseconds;
