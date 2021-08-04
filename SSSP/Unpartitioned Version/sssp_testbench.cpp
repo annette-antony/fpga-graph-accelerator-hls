@@ -27,10 +27,10 @@ int main()
 		}
   d[src] = 0;
 
-  FILE *fp = fopen("adjacency.txt","r");
+  FILE *fp = fopen("edgelist.txt","r");
   char line[100];
   int g;
-  	  if((fp = fopen("adjacency.txt","r")) == NULL)
+  	  if((fp = fopen("edgelist.txt","r")) == NULL)
   	  {
          fprintf(stderr,"[Error] Cannot open the file");
          exit(1);
