@@ -3,23 +3,14 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
-#include"sssp_h.h"
+#include"bfs_h.h"
 using namespace std;
 int graph[V+1][V+1]={0};
-int *d, *q;
-int *visited;
-int *row, *col;
-int *nzr;
+int d[V+1]={0}, q[V]={0},row[E]={0}, col[E]={0}, nzr[V+2]={0}, visited[V+1]={0};
 int main()
 {
 	int i;
 	int src = 1;
-	d = new int [V+1];
-	q = new int [V];
-	visited = new int [V+1];
-	row = new int [E];
-	col = new int [E];
-	nzr = new int [V+2];
 	for(i=1;i<V+1;i++)
 	{
 		d[i]=9999;
@@ -27,10 +18,10 @@ int main()
 		}
   d[src] = 0;
 
-  FILE *fp = fopen("edgelist.txt","r");
+  FILE *fp = fopen("adjacency.txt","r");
   char line[100];
   int g;
-  	  if((fp = fopen("edgelist.txt","r")) == NULL)
+  	  if((fp = fopen("adjacency.txt","r")) == NULL)
   	  {
          fprintf(stderr,"[Error] Cannot open the file");
          exit(1);
@@ -43,6 +34,10 @@ int main()
   		graph[node2][node1]=1;
   	}
   	fclose(fp);
+  	//fp = fopen("chesapeake.mtx","r");
+	//fscanf(fp,"%d%d", &node1, &node2);
+  	//row[0]= node2;
+  	//fclose(fp);
   	int m = 0, j;
   	    nzr[0] = 0;
   	    for(int i=1;i<V+1;i++)
@@ -85,7 +80,6 @@ int main()
 	{
 	  cout<<"\n distance of node "<<i << " is "<<d[i];
 	}
-	delete [] d, q, visited, row, col, nzr;
 	return 0;
 
 }
