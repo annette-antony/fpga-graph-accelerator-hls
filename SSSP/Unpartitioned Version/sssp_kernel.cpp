@@ -5,11 +5,11 @@ using namespace std;
 void shortest(int *col, int *nzr, int *d, int *visited, int *q, int src)
 {
 #pragma HLS INTERFACE s_axilite port=return bundle=sqrt
-#pragma HLS INTERFACE m_axi depth=27444 port=col offset=slave bundle=input
-#pragma HLS INTERFACE m_axi depth=4722 port=nzr offset=slave bundle=input
-#pragma HLS INTERFACE m_axi depth=4721 port=d offset=slave bundle=output
-#pragma HLS INTERFACE m_axi depth=4721 port=visited offset=slave bundle=output
-#pragma HLS INTERFACE m_axi depth=4721 port=q offset=slave bundle=output
+#pragma HLS INTERFACE m_axi depth=22 port=col offset=slave bundle=input
+#pragma HLS INTERFACE m_axi depth=12 port=nzr offset=slave bundle=input
+#pragma HLS INTERFACE m_axi depth=11 port=d offset=slave bundle=output
+#pragma HLS INTERFACE m_axi depth=11 port=visited offset=slave bundle=output
+#pragma HLS INTERFACE m_axi depth=11 port=q offset=slave bundle=output
 #pragma HLS INTERFACE s_axilite port=col
 #pragma HLS INTERFACE s_axilite port=nzr
 #pragma HLS INTERFACE s_axilite port=d
